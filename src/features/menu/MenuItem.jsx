@@ -2,8 +2,9 @@ import { formatCurrency } from '../utilities/helpers';
 import Button from '../utilities/Components/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem, getCurrentQuantityById } from '../cart/cartSlice';
-import DeleteItemButton from '../cart/deleteItemButton';
+
 import UpdateQuantity from '../cart/UpdateQuantity';
+import DeleteItemButton from '../cart/DeleteItemButton';
 
 function MenuItem({ pizza }) {
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
