@@ -1,8 +1,8 @@
-import { useActionData, useFetcher } from 'react-router-dom';
+import { useFetcher } from 'react-router-dom';
 import Button from '../utilities/Components/Button';
 import { updateOrder } from '../../services/apiRestaurant';
 
-function UpdateOrder({ order }) {
+function UpdateOrder() {
   const fetcher = useFetcher();
 
   return (

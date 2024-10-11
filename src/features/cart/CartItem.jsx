@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import Button from '../utilities/Components/Button';
+
 import { formatCurrency } from '../utilities/helpers';
 
 import DeleteItemButton from './deleteItemButton';
@@ -20,9 +20,6 @@ function CartItem({ item }) {
         <p className="text-sm font-bold">{formatCurrency(totalPrice)}</p>
         <UpdateQuantity pizzaId={pizzaId} currentQuantity={currentQuantity} />
         <DeleteItemButton pizzaId={pizzaId} />
-        {/* <Button type="small" onClick={handleDeleteItem}>
-          delete
-        </Button> */}
       </div>
     </li>
   );

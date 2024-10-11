@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { deleteItem } from './cartSlice';
+
 import { getTotalCartQuantity, getTotalPrice } from './cartSlice';
 import { formatCurrency } from '../utilities/helpers';
 
@@ -8,11 +8,11 @@ function CartOverview() {
   const totalQuanity = useSelector(getTotalCartQuantity);
   const totalPrice = useSelector(getTotalPrice);
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  function handleDelete() {
-    // dispatch(deleteItem(pizzaId));
-  }
+  // function handleDelete() {
+  //   // dispatch(deleteItem(pizzaId));
+  // }
 
   if (!totalQuanity) return null;
   return (
